@@ -1,0 +1,21 @@
+<section class="section dark" id="gallery">
+  <div class="wrap">
+    <h2 class="title center" appReveal>Photo <em>Gallery</em></h2>
+    <div class="masonry">
+      @for (src of images(); track $index) {
+        <div class="g" appReveal (click)="open($index)">
+          <img loading="lazy" [src]="src" [alt]="'Photo ' + ($index + 1)" (error)="hide($event)">
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+@if (current(); as src) {
+  <div class="lightbox open" (click)="close()">
+    <button class="lb-close" (click)="close()" aria-label="Close">×</button>
+    <button class="lb-nav prev" (click)="step(-1); $event.stopPropagation()" aria-label="Previous">‹</button>
+    <img [src]="src" alt="" (click)="$event.stopPropagation()">
+    <button class="lb-nav next" (click)="step(1); $event.stopPropagation()" aria-label="Next">›</button>
+  </div>
+}

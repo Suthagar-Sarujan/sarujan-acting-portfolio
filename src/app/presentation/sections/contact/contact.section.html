@@ -1,0 +1,14 @@
+<section class="section contact" id="contact">
+  <div class="wrap narrow center">
+    <h2 class="title" appReveal>Let's create <em>something</em></h2>
+    <p class="prose" appReveal>{{ contact().text }}</p>
+    <div class="contact-links" appReveal>
+      @if (contact().email) { <a class="btn primary" [href]="'mailto:' + contact().email">✉ {{ contact().email }}</a> }
+      @if (contact().phone) { <a class="btn ghost" [href]="'tel:' + contact().phone">☎ {{ contact().phone }}</a> }
+      @if (contact().instagram) { <a class="btn ghost" [href]="contact().instagram" target="_blank" rel="noopener">Instagram</a> }
+      @if (contact().youtube) { <a class="btn ghost" [href]="contact().youtube" target="_blank" rel="noopener">YouTube</a> }
+      @if (contact().facebook) { <a class="btn ghost" [href]="contact().facebook" target="_blank" rel="noopener">Facebook</a> }
+      @if (contact().tiktok) { <a class="btn ghost" [href]="contact().tiktok" target="_blank" rel="noopener">TikTok</a> }
+    </div>
+  </div>
+</section>

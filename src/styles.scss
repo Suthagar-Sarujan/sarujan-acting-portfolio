@@ -1,0 +1,43 @@
+// Global: design tokens, reset and styles shared by several components.
+:root {
+  --font: 'Poppins', system-ui, sans-serif;
+  --bg: #0b0b0e; --bg2: #121217; --fg: #f2efe9; --mute: #a09c94;
+  --gold: #d4a85a; --gold2: #f0cf8c; --line: rgba(255, 255, 255, .1); --r: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font); }
+button, input, textarea, select { font: inherit; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body { background: var(--bg); color: var(--fg); font: 400 16px/1.7 var(--font); overflow-x: hidden; }
+img, video { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+em { font-style: italic; color: var(--gold); }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+.narrow { max-width: 760px; }
+.center { text-align: center; }
+
+.section { padding: 110px 0; &.dark { background: var(--bg2); } }
+.title {
+  font: 700 clamp(34px, 5vw, 56px)/1.1 var(--font); margin-bottom: 34px;
+  &.center { text-align: center; }
+  &.sub { margin-top: 90px; }
+}
+.prose { color: #cfcbc3; font-size: 17px; p { margin-bottom: 16px; } }
+
+.btn {
+  display: inline-block; padding: 14px 30px; border-radius: 99px; font-weight: 500;
+  letter-spacing: .04em; transition: .25s; border: 1px solid var(--gold);
+  &.primary { background: var(--gold); color: #14110a; &:hover { background: var(--gold2); transform: translateY(-2px); } }
+  &.ghost { color: var(--fg); border-color: var(--line); &:hover { border-color: var(--gold); color: var(--gold); } }
+}
+
+.reveal { opacity: 0; transform: translateY(34px); transition: opacity .9s, transform .9s; &.in { opacity: 1; transform: none; } }
+.footer { text-align: center; padding: 30px; color: var(--mute); font-size: 13px; border-top: 1px solid var(--line); }
+
+@media (max-width: 860px) { .section { padding: 80px 0; } }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

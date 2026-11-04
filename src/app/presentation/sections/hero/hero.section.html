@@ -1,0 +1,14 @@
+<section class="hero" id="home">
+  <div class="hero-bg" [appBgImage]="data().heroImage"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow" appReveal>{{ data().role }}</p>
+    <h1 appReveal>{{ data().name }}</h1>
+    <p class="tagline" appReveal>{{ data().tagline }}</p>
+    <div class="hero-actions" appReveal>
+      <a href="#showreel" class="btn primary">▶ Watch Showreel</a>
+      <a href="#contact" class="btn ghost">Get in touch</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>

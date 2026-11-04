@@ -1,0 +1,8 @@
+.timeline { position: relative; padding-left: 36px; border-left: 1px solid var(--gold); }
+.tl {
+  position: relative; margin-bottom: 44px;
+  &::before { content: ""; position: absolute; left: -43px; top: 8px; width: 13px; height: 13px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 6px rgba(212, 168, 90, .18); }
+  b { color: var(--gold); letter-spacing: .15em; font-size: 14px; }
+  h3 { font: 600 24px var(--font); }
+  p { color: var(--mute); }
+}

@@ -1,0 +1,19 @@
+.now-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+.now {
+  background: var(--bg2); border: 1px solid var(--line); border-radius: var(--r); padding: 30px; transition: .3s;
+  &:hover { transform: translateY(-6px); border-color: var(--gold); }
+  i { font-style: normal; font-size: 34px; }
+  h3 { margin: 10px 0 6px; font: 600 20px var(--font); }
+  p { color: var(--mute); font-size: 15px; }
+}
+.work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+.card {
+  position: relative; aspect-ratio: 3/4; border-radius: var(--r); overflow: hidden;
+  background: linear-gradient(160deg, #2c2418, #12100c) center/cover;
+  &::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0, 0, 0, .88), transparent 60%); }
+  div { position: absolute; z-index: 1; left: 20px; right: 20px; bottom: 20px; transition: .3s; }
+  &:hover div { transform: translateY(-6px); }
+  small { color: var(--gold); letter-spacing: .15em; text-transform: uppercase; font-size: 12px; }
+  h3 { font: 600 22px var(--font); }
+  p { font-size: 14px; color: #c8c4bb; }
+}

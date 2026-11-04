@@ -1,0 +1,9 @@
+<header class="nav" [class.solid]="solid()">
+  <a href="#home" class="logo">{{ name() }}</a>
+  <button class="burger" (click)="open.set(!open())" aria-label="Menu"><span></span><span></span></button>
+  <nav [class.open]="open()">
+    @for (l of links; track l.href) {
+      <a [href]="l.href" [class.cta]="l.cta" (click)="open.set(false)">{{ l.label }}</a>
+    }
+  </nav>
+</header>

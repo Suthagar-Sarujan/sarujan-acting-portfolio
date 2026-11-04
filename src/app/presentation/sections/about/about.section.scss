@@ -1,0 +1,18 @@
+.about-grid { display: grid; grid-template-columns: 5fr 6fr; gap: 70px; align-items: center; }
+.portrait {
+  aspect-ratio: 4/5; border-radius: var(--r); background: linear-gradient(145deg, #2a2218, #15120d) center/cover;
+  position: relative; box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
+  &::after { content: ""; position: absolute; inset: -14px 14px 14px -14px; border: 1px solid var(--gold); border-radius: var(--r); z-index: -1; }
+}
+.stats {
+  display: flex; gap: 40px; margin: 28px 0;
+  b { display: block; font: 700 40px var(--font); color: var(--gold); }
+  span { font-size: 13px; color: var(--mute); text-transform: uppercase; letter-spacing: .1em; }
+}
+.chips { display: flex; flex-wrap: wrap; gap: 10px; li { border: 1px solid var(--line); padding: 6px 16px; border-radius: 99px; font-size: 14px; color: #d6d2ca; } }
+
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; gap: 50px; }
+  .portrait { max-width: 380px; margin: auto; }
+  .stats { gap: 26px; }
+}

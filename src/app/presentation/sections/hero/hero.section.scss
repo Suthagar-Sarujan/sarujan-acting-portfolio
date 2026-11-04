@@ -1,0 +1,26 @@
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+.hero-bg {
+  position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, #3a2a14, #0b0b0e 65%) center/cover;
+  animation: zoom 22s ease-in-out infinite alternate;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(11, 11, 14, .92) 0%, rgba(11, 11, 14, .45) 60%, rgba(11, 11, 14, .7) 100%),
+              linear-gradient(0deg, var(--bg), transparent 35%);
+}
+.hero-content { position: relative; max-width: 1180px; margin: 0 auto; padding: 120px 28px 80px; width: 100%; }
+.eyebrow { color: var(--gold); letter-spacing: .35em; text-transform: uppercase; font-size: 13px; margin-bottom: 14px; }
+h1 {
+  font: 700 clamp(56px, 11vw, 140px)/1.2 var(--font); letter-spacing: -.01em; padding-bottom: .08em; margin-bottom: 14px;
+  background: linear-gradient(120deg, #fff 30%, var(--gold2)); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.tagline { max-width: 520px; font-size: 19px; color: #d6d2ca; margin-bottom: 34px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.scroll-hint {
+  position: absolute; bottom: 26px; left: 50%; width: 24px; height: 40px;
+  border: 2px solid rgba(255, 255, 255, .4); border-radius: 14px; transform: translateX(-50%);
+  span { position: absolute; top: 7px; left: 50%; width: 4px; height: 8px; margin-left: -2px; background: var(--gold); border-radius: 3px; animation: wheel 1.6s infinite; }
+}
+@keyframes wheel { to { transform: translateY(14px); opacity: 0; } }
+@keyframes zoom { to { transform: scale(1.08); } }

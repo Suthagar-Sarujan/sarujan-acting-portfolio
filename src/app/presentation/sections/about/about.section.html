@@ -1,0 +1,19 @@
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="portrait" appReveal [appBgImage]="about().portrait"></div>
+    <div appReveal>
+      <h2 class="title">Who <em>am I?</em></h2>
+      <div class="prose">
+        @for (p of about().paragraphs; track $index) { <p>{{ p }}</p> }
+      </div>
+      <ul class="stats">
+        @for (s of about().stats; track s.label) {
+          <li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>
+        }
+      </ul>
+      <ul class="chips">
+        @for (s of about().skills; track s) { <li>{{ s }}</li> }
+      </ul>
+    </div>
+  </div>
+</section>

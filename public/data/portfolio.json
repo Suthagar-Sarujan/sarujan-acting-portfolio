@@ -1,0 +1,55 @@
+{
+  "name": "Sarujan",
+  "role": "Actor · Performer · Dancer · Singer · Content Creator",
+  "tagline": "Bringing honest characters to life on screen and stage.",
+  "heroImage": "assets/images/hero.jpg",
+  "about": {
+    "portrait": "assets/images/portrait.jpg",
+    "paragraphs": [
+      "I'm Sarujan, an actor driven by emotion, truth and transformation. (Replace this with your own story: where you're from, how you started acting, what drives you.)",
+      "I love working across film, stage and short-form content, and I'm always looking for roles that challenge me."
+    ],
+    "stats": [
+      { "value": "5+", "label": "Years acting" },
+      { "value": "12", "label": "Projects" },
+      { "value": "3", "label": "Languages" }
+    ],
+    "skills": ["Drama", "Comedy", "Voice Acting", "Improvisation", "Dance", "Stage Combat"]
+  },
+  "videos": [
+    { "title": "Acting Showreel 2026", "file": "assets/videos/showreel.mp4", "poster": "assets/images/showreel-poster.jpg" },
+    { "title": "Monologue - Drama", "file": "assets/videos/monologue.mp4", "poster": "assets/images/monologue.jpg" },
+    { "title": "Short Film Clip", "youtube": "", "poster": "assets/images/clip.jpg" }
+  ],
+  "now": [
+    { "icon": "🎬", "title": "Currently filming", "text": "Working on a new short film (add details here)." },
+    { "icon": "🎭", "title": "In rehearsal", "text": "Preparing for an upcoming stage production." },
+    { "icon": "📚", "title": "Training", "text": "Acting workshops and voice training." }
+  ],
+  "work": [
+    { "title": "Project Title", "type": "Short Film", "role": "Lead", "year": "2026", "image": "assets/images/work1.jpg" },
+    { "title": "Project Title", "type": "Stage Play", "role": "Supporting", "year": "2025", "image": "assets/images/work2.jpg" },
+    { "title": "Project Title", "type": "Music Video", "role": "Lead", "year": "2025", "image": "assets/images/work3.jpg" },
+    { "title": "Project Title", "type": "TV / Web Series", "role": "Guest", "year": "2024", "image": "assets/images/work4.jpg" }
+  ],
+  "gallery": [
+    "assets/images/gallery1.jpg", "assets/images/gallery2.jpg", "assets/images/gallery3.jpg",
+    "assets/images/gallery4.jpg", "assets/images/gallery5.jpg", "assets/images/gallery6.jpg",
+    "assets/images/gallery7.jpg", "assets/images/gallery8.jpg", "assets/images/gallery9.jpg"
+  ],
+  "journey": [
+    { "year": "2026", "title": "Latest milestone", "text": "What you achieved or are working on now." },
+    { "year": "2024", "title": "First lead role", "text": "Describe a key project or award." },
+    { "year": "2022", "title": "Started professional training", "text": "School, workshop or mentor." },
+    { "year": "2020", "title": "Where it began", "text": "Your first time on stage or camera." }
+  ],
+  "contact": {
+    "text": "Available for film, TV, stage, commercials and collaborations. Let's talk.",
+    "email": "suthagarsarujan93@gmail.com",
+    "phone": "",
+    "instagram": "https://instagram.com/",
+    "youtube": "",
+    "facebook": "https://facebook.com/",
+    "tiktok": "https://tiktok.com/"
+  }
+}

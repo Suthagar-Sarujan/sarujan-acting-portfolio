@@ -1,0 +1,25 @@
+<section class="section dark" id="showreel">
+  <div class="wrap">
+    <h2 class="title center" appReveal>Showreel <em>&amp; Videos</em></h2>
+    <div class="video-main" appReveal>
+      @if (current(); as v) {
+        @if (youtubeUrl(); as url) {
+          <iframe [src]="url" allowfullscreen allow="encrypted-media;picture-in-picture"></iframe>
+        } @else if (v.file && !failed()) {
+          <video controls preload="metadata" [attr.poster]="v.poster" [src]="v.file" (error)="failed.set(true)"></video>
+        } @else {
+          <div class="vempty">
+            @if (v.file) { Add <b>{{ v.file }}</b><br>to show this video. } @else { Video coming soon. }
+          </div>
+        }
+      }
+    </div>
+    <div class="video-list">
+      @for (v of videos(); track $index) {
+        <div class="vthumb" [class.active]="$index === index()" [appBgImage]="v.poster" (click)="select($index)">
+          <span>{{ v.title }}</span>
+        </div>
+      }
+    </div>
+  </div>
+</section>
