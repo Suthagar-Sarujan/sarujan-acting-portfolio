@@ -1,7 +1,7 @@
 @if (portfolio(); as p) {
   <app-navbar [name]="p.name" />
   <app-hero [data]="p" />
-  <app-about [about]="p.about" />
+  <app-about [about]="p.about" [name]="p.name" />
   <app-showreel [videos]="p.videos" />
   <app-work [now]="p.now" [work]="p.work" />
   <app-gallery [images]="p.gallery" />

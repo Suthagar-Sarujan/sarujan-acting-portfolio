@@ -16,3 +16,13 @@
   .portrait { max-width: 380px; margin: auto; }
   .stats { gap: 26px; }
 }
+
+// Highlighted name in the bio: coloured letters (no background), shifts colour and glows on hover
+.name {
+  font-weight: 700; cursor: default;
+  background: linear-gradient(90deg, #f0cf8c, #d4a85a 50%, #f0cf8c);
+  background-size: 200% 100%; background-position: 0 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  transition: background-position .6s, filter .3s;
+  &:hover { background-position: 100% 0; filter: drop-shadow(0 0 8px rgba(240, 207, 140, .7)); }
+}

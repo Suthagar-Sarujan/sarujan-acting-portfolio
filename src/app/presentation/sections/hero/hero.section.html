@@ -1,5 +1,9 @@
 <section class="hero" id="home">
   <div class="hero-bg" [appBgImage]="data().heroImage"></div>
+  @if (data().heroVideo; as video) {
+    <video class="hero-video" [src]="video" [muted]="true" muted autoplay loop playsinline preload="auto"
+           (error)="$any($event.target).style.display = 'none'"></video>
+  }
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="eyebrow" appReveal>{{ data().role }}</p>

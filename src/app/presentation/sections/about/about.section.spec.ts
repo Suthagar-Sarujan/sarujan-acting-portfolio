@@ -9,11 +9,16 @@ describe('AboutSection', () => {
     await TestBed.configureTestingModule({ imports: [AboutSection] }).compileComponents();
     fixture = TestBed.createComponent(AboutSection);
     fixture.componentRef.setInput('about', PORTFOLIO_FIXTURE.about);
+    fixture.componentRef.setInput('name', 'Paragraph');
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(fixture.componentInstance).toBeTruthy();
+  });
+
+  it('highlights the name inside the bio', () => {
+    expect(fixture.nativeElement.querySelector('mark.name')?.textContent).toBe('Paragraph');
   });
 
   it('renders its content', () => {

@@ -3,45 +3,131 @@
   "role": "Actor · Performer · Dancer · Singer · Content Creator",
   "tagline": "Bringing honest characters to life on screen and stage.",
   "heroImage": "assets/images/hero.jpg",
+  "heroVideo": "assets/videos/banner.mp4",
   "about": {
     "portrait": "assets/images/portrait.jpg",
     "paragraphs": [
-      "I'm Sarujan, an actor driven by emotion, truth and transformation. (Replace this with your own story: where you're from, how you started acting, what drives you.)",
-      "I love working across film, stage and short-form content, and I'm always looking for roles that challenge me."
+      "I'm Sarujan, an aspiring actor from Sri Lanka with a passion for storytelling, emotion, and bringing characters to life. My journey into acting comes from a love for cinema and the power of expressing real human emotions through performance.",
+      "I enjoy exploring different characters and working across films, short-form videos, and creative visual projects. I'm always eager to learn, grow, and take on challenging roles that allow me to push my limits, express creativity, and connect with audiences through authentic performances."
     ],
     "stats": [
-      { "value": "5+", "label": "Years acting" },
-      { "value": "12", "label": "Projects" },
-      { "value": "3", "label": "Languages" }
+      {
+        "value": "10+",
+        "label": "Years acting"
+      },
+      {
+        "value": "3",
+        "label": "Languages"
+      }
     ],
-    "skills": ["Drama", "Comedy", "Voice Acting", "Improvisation", "Dance", "Stage Combat"]
+    "skills": [
+      "Movie Acting",
+      "Short Film Acting",
+      "Proficiency in the Tamil Language",
+      "Drama",
+      "Comedy",
+      "Voice Acting",
+      "Improvisation",
+      "Dance",
+      "Stage Combat"
+    ]
   },
   "videos": [
-    { "title": "Acting Showreel 2026", "file": "assets/videos/showreel.mp4", "poster": "assets/images/showreel-poster.jpg" },
-    { "title": "Monologue - Drama", "file": "assets/videos/monologue.mp4", "poster": "assets/images/monologue.jpg" },
-    { "title": "Short Film Clip", "youtube": "", "poster": "assets/images/clip.jpg" }
+    {
+      "title": "Acting Showreel 2026",
+      "file": "assets/videos/showreel.mp4",
+      "poster": "assets/images/showreel-poster.jpg"
+    },
+    {
+      "title": "Monologue - Drama",
+      "file": "assets/videos/monologue.mp4",
+      "poster": "assets/images/monologue.jpg"
+    },
+    {
+      "title": "Short Film Clip",
+      "youtube": "",
+      "poster": "assets/images/clip.jpg"
+    }
   ],
   "now": [
-    { "icon": "🎬", "title": "Currently filming", "text": "Working on a new short film (add details here)." },
-    { "icon": "🎭", "title": "In rehearsal", "text": "Preparing for an upcoming stage production." },
-    { "icon": "📚", "title": "Training", "text": "Acting workshops and voice training." }
+    {
+      "icon": "video",
+      "title": "Currently filming",
+      "text": "Working on a new short film (add details here)."
+    },
+    {
+      "icon": "mic",
+      "title": "In rehearsal",
+      "text": "Preparing for an upcoming stage production."
+    },
+    {
+      "icon": "cap",
+      "title": "Training",
+      "text": "Acting workshops and voice training."
+    }
   ],
   "work": [
-    { "title": "Project Title", "type": "Short Film", "role": "Lead", "year": "2026", "image": "assets/images/work1.jpg" },
-    { "title": "Project Title", "type": "Stage Play", "role": "Supporting", "year": "2025", "image": "assets/images/work2.jpg" },
-    { "title": "Project Title", "type": "Music Video", "role": "Lead", "year": "2025", "image": "assets/images/work3.jpg" },
-    { "title": "Project Title", "type": "TV / Web Series", "role": "Guest", "year": "2024", "image": "assets/images/work4.jpg" }
+    {
+      "title": "Project Title",
+      "type": "Short Film",
+      "role": "Lead",
+      "year": "2026",
+      "image": "assets/images/work1.jpg"
+    },
+    {
+      "title": "Project Title",
+      "type": "Stage Play",
+      "role": "Supporting",
+      "year": "2025",
+      "image": "assets/images/work2.jpg"
+    },
+    {
+      "title": "Project Title",
+      "type": "Music Video",
+      "role": "Lead",
+      "year": "2025",
+      "image": "assets/images/work3.jpg"
+    },
+    {
+      "title": "Project Title",
+      "type": "TV / Web Series",
+      "role": "Guest",
+      "year": "2024",
+      "image": "assets/images/work4.jpg"
+    }
   ],
   "gallery": [
-    "assets/images/gallery1.jpg", "assets/images/gallery2.jpg", "assets/images/gallery3.jpg",
-    "assets/images/gallery4.jpg", "assets/images/gallery5.jpg", "assets/images/gallery6.jpg",
-    "assets/images/gallery7.jpg", "assets/images/gallery8.jpg", "assets/images/gallery9.jpg"
+    "assets/images/gallery1.jpg",
+    "assets/images/gallery2.jpg",
+    "assets/images/gallery3.jpg",
+    "assets/images/gallery4.jpg",
+    "assets/images/gallery5.jpg",
+    "assets/images/gallery6.jpg",
+    "assets/images/gallery7.jpg",
+    "assets/images/gallery8.jpg",
+    "assets/images/gallery9.jpg"
   ],
   "journey": [
-    { "year": "2026", "title": "Latest milestone", "text": "What you achieved or are working on now." },
-    { "year": "2024", "title": "First lead role", "text": "Describe a key project or award." },
-    { "year": "2022", "title": "Started professional training", "text": "School, workshop or mentor." },
-    { "year": "2020", "title": "Where it began", "text": "Your first time on stage or camera." }
+    {
+      "year": "2026",
+      "title": "First Film Opportunity",
+      "text": "After participating in auditions, I was selected for a film role, marking an exciting new chapter in my acting journey and opening the door to new opportunities in cinema."
+    },
+    {
+      "year": "2025",
+      "title": "Growing as an Artist",
+      "text": "Continued developing my creative skills through acting videos, dance performances, and collaborations, exploring different forms of expression and storytelling."
+    },
+    {
+      "year": "2024",
+      "title": "In Front of the Camera",
+      "text": "Started creating social media dance videos and exploring on-camera performances, discovering my passion for acting, creativity, and connecting with audiences."
+    },
+    {
+      "year": "2015",
+      "title": "The Beginning",
+      "text": "My journey began with stage dramas, early acting experiences, and dance performances, building the foundation for my passion for performing arts."
+    }
   ],
   "contact": {
     "text": "Available for film, TV, stage, commercials and collaborations. Let's talk.",

@@ -3,7 +3,7 @@
     <h2 class="title center" appReveal>What I'm <em>doing</em> now</h2>
     <div class="now-grid">
       @for (n of now(); track n.title) {
-        <div class="now" appReveal><i>{{ n.icon }}</i><h3>{{ n.title }}</h3><p>{{ n.text }}</p></div>
+        <div class="now" appReveal><span class="icon"><app-icon [name]="n.icon" /></span><h3>{{ n.title }}</h3><p>{{ n.text }}</p></div>
       }
     </div>
     <h2 class="title center sub" appReveal>Selected <em>Work</em></h2>

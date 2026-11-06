@@ -16,6 +16,7 @@ export interface Portfolio {
   role: string;
   tagline: string;
   heroImage: string;
+  heroVideo?: string;
   about: About;
   videos: Video[];
   now: NowItem[];
